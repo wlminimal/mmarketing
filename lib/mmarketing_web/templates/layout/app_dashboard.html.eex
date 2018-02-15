@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Welcome to Mmarketing!</title>
+    
+  
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.2/css/materialize.min.css">
+    <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"> -->
+  </head>
+
+  <body class="">
+    <header class="d-header">
+      <%= render "_dashboard_topmenu.html", assigns %>
+      <%= render "_dashboard_sidemenu.html", assigns %>
+    </header>
+    
+    <main class="d-main">
+      <div class="container">
+        <div class="row">
+          <div class="col s12">
+           <!-- main page content -->
+            <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
+              <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
+              <%= render @view_module, @view_template, assigns %>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="d-footer">
+      
+    </footer>
+
+  
+    <!-- <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.2/js/materialize.min.js"></script>
+    <script>
+      // var dropElem = document.querySelector('.dropdown-trigger');
+      // options = {
+      //   alignment: 'right',
+      //   hover: false,
+      //   constrainWidth: false
+      // };
+      // var dropdown = new M.Dropdown(dropElem, options);
+
+      var sideElem = document.querySelector('.sidenav');
+      options = {
+        edge: 'left',
+        draggable: true
+      };
+      var sidebar = new M.Sidenav(sideElem, options);
+
+    </script>
+   <!-- <script>
+      window.mdc.autoInit();
+      let menu = new mdc.menu.MDCSimpleMenu(document.querySelector('.mdc-simple-menu'));
+      document.querySelector('.menu-button').addEventListener('click', () => menu.open = !menu.open);
+    </script> 
+    -->
+  </body>
+</html>

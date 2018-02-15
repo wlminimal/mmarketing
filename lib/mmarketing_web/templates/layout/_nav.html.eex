@@ -1,0 +1,27 @@
+<div class="ui fluid container main-menu">
+  <div class="ui menu">
+    <!-- <a class="item hamburger-button">
+      <i class="sidebar icon"></i>
+    </a> -->
+
+    <div class="header item">Minimal Marketing</div>
+
+    <div class="right menu">
+      <div class="active item">
+        <a href="#">Service</a>
+      </div>
+      <div class="item">
+        <a href="#">About</a>
+      </div>
+      <div class="item">
+        <a href="#">Price</a>
+      </div>
+      <div class="item">
+        <a href="<%= sign_in_path(@conn, :new) %>" class="ui orange inverted button">Log in</a>
+        </div>
+      <div class="item">
+        <a href="<%= sign_up_path(@conn, :new) %>" class="ui blue inverted button">Sign up</a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,43 @@
+<div class="container">
+  <a href="#" class="top-nav sidenav-trigger full hide-on-large-only" data-target="nav-mobile"><i class="material-icons">menu</i></a>
+</div>
+
+<ul id="nav-mobile" class="sidenav sidenav-fixed">
+  <li class="logo">
+    <a href="#" class="brand-logo"></a>
+  </li>
+  <li>
+    <div class="user-view">
+      <div class="background">
+        
+      </div>
+      <a href="#!user"><img class="circle" src="<%= static_path(@conn, "/images/profile.jpg") %>"</a>
+      <a href="#!name"><span class="white-text name">John Doe</span></a>
+      <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+    </div>
+  </li>
+  <li class="bold">
+    <a href="<%= sms_path(@conn, :new) %>" class="waves-effect waves-purple"><i class="small material-icons">textsms</i>Send SMS Message</a>
+  </li>
+  <li class="bold">
+    <a href="<%= mms_path(@conn, :new) %>" class="waves-effect waves-purple"><i class="small material-icons">photo_album</i>Send MMS Message</a>
+  </li>
+  <li class="bold">
+    <a href="#" class="waves-effect waves-purple"><i class="small material-icons">contacts</i>Contact & Groups</a>
+  </li>
+  <li class="bold">
+    <a href="#" class="waves-effect waves-purple"><i class="small material-icons">build</i>Report</a>
+  </li>
+  <li class="divider"></li>
+
+  <li><a href="#" class="waves-effect waves-red"><i class="small material-icons">info</i>Personal Info</a></li>
+  <li><a href="#" class="waves-effect waves-red"><i class="small material-icons">monetization_on</i>Billing Info</a></li>
+  <li><a href="#" class="waves-effect waves-red"><i class="small material-icons">receipt</i>View Invoice</a></li>
+  <li><a href="#" class="waves-effect waves-red"><i class="small material-icons">settings</i>Settings</a></li>
+  <li class="divider"></li>
+  <li><a href="#" class="waves-effect waves-red"><i class="small material-icons">help</i>Help</a></li>
+  <li><a href="#" class="waves-effect waves-red"><i class="small material-icons">highlight_off</i>Logout</a></li>
+</ul>
+
+
+

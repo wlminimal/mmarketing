@@ -1,0 +1,65 @@
+<section class="login-section">
+
+  <div class="login-div">
+    <div class="ui raised segment">
+      <h1 class="ui huge header">Sign up</h1>
+      <div class="ui two column stackable center aligned grid">
+        <div class="column">
+          <%= form_for @changeset, sign_up_path(@conn, :create), [as: :register, class: "ui form"], fn f -> %>
+          
+            <div class="field">
+              <label>First Name</label>
+              <div class="">
+                <%= text_input(f, :first_name, placeholder: "John", required: true) %>
+                <%= error_message(f, :first_name) %>
+              </div>
+            </div>
+
+            <div class="field">
+              <label>Last Name</label>
+              <div class="">
+                <%= text_input(f, :last_name, placeholder: "Doe", required: true) %>
+                <%= error_message(f, :last_name) %>
+              </div>
+            </div>
+
+            <div class="field">
+              <label>Email</label>
+              <div class="">
+                <%= email_input(f, :email, placeholder: "johndoe@example.com", required: true) %>
+                <%= error_message(f, :email) %>
+              </div>
+            </div>
+            
+           <!-- <div class="field">
+              <label>Phone Number</label>
+              <div>
+                <%= text_input(f, :phone_number, placeholder: "213-666-7777", required: true) %>
+                <%= error_message(f, :phone_number) %>
+              </div>
+            </div> -->
+        
+          <!--  <div class="ui form">
+              <div class="field">
+                <label>Select your Plan</label>
+                <%= select(f, :plan, ["Free", "Basic", "Pro"], required: true) %>
+              </div>
+            </div>
+          -->
+          
+            <div class="field">
+              <input class="ui button green medium" type="submit" name="" value="Sign up">
+              <div class="">
+                <span class="ui small header">Already a member?</span> <a class="sign-up-link" href="/sign-in"><em>Sign in</em></a>
+              </div>
+            </div>
+
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+

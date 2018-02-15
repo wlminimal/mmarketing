@@ -1,0 +1,36 @@
+
+
+ <div class="row">
+ 	<div class="row">
+    <div class="col s12">
+    	<h1>Send SMS</h1>
+    </div>
+  </div>
+
+  <%= form_for @conn, sms_path(@conn, :create), [as: :sms], fn f -> %>
+	  <div class="row">
+	  	<div class="input-field col s12">
+	  		<i class="material-icons prefix">phone</i>
+	  		<%= text_input f, :phone_numbers, class: "validate", id: "phone_numbers", placeholder: "Phone Numbers" %>
+				<label for="phone_numbers">Phone Numbers</label>
+				<span class="helper-text d-helper-text">Type 10 digit phone number including area code (ex 7778889999), multiple phone number separating by space. </span>
+	  	</div>
+		</div>
+
+		<div class="row">
+			<div class="input-field col s12">
+				<i class="material-icons prefix">message</i>
+				<%= textarea f, :message, class: "materialize-textarea", id: "message" %>
+				<label for="message">Message</label>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col s12">
+				<button class="btn waves-effect waves-light" type="submit" name="action">Submit
+			    <i class="material-icons right">send</i>
+			  </button>
+			</div>
+		</div>
+  <% end %>
+</div>

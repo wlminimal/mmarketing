@@ -1,0 +1,164 @@
+html {
+	height: 100%;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+
+.flex-container {
+	max-width: 1280px;
+	margin: 0 auto 0 auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.flex-item {
+	flex: 0 1 auto;
+	max-width: 320px;
+	margin: 10px 10px 0 10px;
+	background-color: white;
+}
+
+.d-main-card {
+  width: 320px;
+  height: 220px;
+  background: rgba(102,166,255,1);
+  background: -moz-linear-gradient(45deg, rgba(102,166,255,1) 0%, rgba(137,246,254,1) 100%);
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(102,166,255,1)), color-stop(100%, rgba(137,246,254,1)));
+  background: -webkit-linear-gradient(45deg, rgba(102,166,255,1) 0%, rgba(137,246,254,1) 100%);
+  background: -o-linear-gradient(45deg, rgba(102,166,255,1) 0%, rgba(137,246,254,1) 100%);
+  background: -ms-linear-gradient(45deg, rgba(102,166,255,1) 0%, rgba(137,246,254,1) 100%);
+  background: linear-gradient(45deg, rgba(102,166,255,1) 0%, rgba(137,246,254,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66a6ff', endColorstr='#89f6fe', GradientType=1 );
+
+}
+
+.d-main-card-icon {
+	max-width: 64px;
+}
+
+.app-fab--absolute {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+@media(min-width: 1024px) {
+   .app-fab--absolute {
+    bottom: 2.5rem;
+    right: 2.5rem;
+  }
+}
+
+
+.mdc-toolbar__section--align-end {
+	padding-right: 60px;
+}
+
+
+.d-header, .d-main, .d-footer {
+	padding-left: 300px;
+}
+
+@media(max-width: 992px) {
+	header, main, footer {
+		padding-left: 0px;
+	}
+}
+nav {
+  color: #fff;
+  background-color: #4527a0;
+  width: 100%;
+  height: 84px;
+  line-height: 84px;
+}
+
+.sidenav li > a {
+  color: #f2f2f2;
+  display: block;
+  font-size: 15px;
+  font-weight: 500;
+  height: 58px;
+  line-height: 48px;
+  padding: 0 32px;
+  text-transform: uppercase;
+}
+
+a.sidenav-trigger.top-nav {
+  position: absolute;
+  text-align: center;
+  height: 48px;
+  width: 48px;
+  left: 7.5%;
+  top: 0;
+  float: none;
+  margin-left: 1.5rem;
+  color: #ffffff;
+  font-size: 36px;
+  z-index: 2;
+}
+
+a.sidenav-trigger.top-nav.full {
+    line-height: 84px;
+}
+
+.sidenav li.logo {
+	height: 84px;
+}
+
+.sidenav.sidenav-fixed {
+  left: 0;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  position: fixed;
+  background-color: #4527a0;
+}
+
+.sidenav li > a > i, .sidenav li > a > [class^="mdi-"], .sidenav li > a li > a > [class*="mdi-"], .sidenav li > a > i.material-icons {
+  float: left;
+  height: 48px;
+  line-height: 48px;
+  margin: 0 32px 0 0;
+  width: 24px;
+  color: rgba(255,255,255,255);
+}
+
+.sidenav .user-view .background {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #f4511e;
+}
+
+.sidenav .user-view {
+    position: relative;
+    padding: 32px 32px 0;
+    margin-bottom: 38px;
+}
+
+.dropdown-content {
+  background-color: #fff;
+  margin: 0;
+  display: none;
+  min-width: 150px;
+  overflow-y: auto;
+  opacity: 0;
+  position: absolute;
+  z-index: 999;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  margin-top: 84px;
+}
+
+.d-helper-text {
+	margin-left: 4em;
+}

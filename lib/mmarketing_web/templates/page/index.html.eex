@@ -1,0 +1,83 @@
+<header>
+	<div class="hero-bg">
+	</div>
+	<div class="hero-bg-not-skewed"></div>
+	<div class="ui container">
+		<div class="ui grid">
+			<div class="eight wide column">
+				<div class="hero-text-container">
+					<h1>Send massive text messages</h1>
+					<h1>with easy one click!</h1>
+					<p>Stripe is the best software platform for running an internet business. We handle billions of dollars every year for forward-thinking businesses around the world. </p>
+					<div class="spacer-4em"></div>
+					<button class="big ui violet button">Get Started</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</header>
+<section class="device-illust">
+	<div class="phone"></div>
+	<div class="tablet-landscape"></div>
+</section>
+<section class="main-content-1">
+	<div class="ui container">
+		<div class="ui grid">
+			<div class="eight wide column">
+				<div class="ui container">
+					<h2>The complete toolkit for internet business</h2>
+					<p>Stripe builds the most powerful and flexible tools for internet commerce. Whether you’re creating a subscription service, an on-demand marketplace, an e-commerce store, or a crowdfunding platform, Stripe’s meticulously-designed APIs and unmatched functionality help you create the best possible product for your users. Hundreds of thousands of the world’s most innovative technology companies are scaling faster and more efficiently by building their businesses on Stripe.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</section>
+
+<section class="service-summary">
+	<div class="service-skewed">
+	
+		<div class="service-content">
+			<div class="ui container">
+				<div class="ui text container">
+					<h1 class="service-header">We Provide Two Services</h1>
+				</div>
+				
+				<div class="two column stackable ui grid">
+				  <div class="column">
+				    <div class="ui raised segment">
+				      <div class="padding-30">
+				    		<h1 class="ui header">Send a Simple Message</h1>
+				    		<p class="">SMS</p>
+					      <p>Stripe builds the most powerful and flexible tools for internet commerce. Whether you’re creating a subscription service, an on-demand marketplace, an e-commerce store, or a crowdfunding platform, Stripe’s meticulously-designed APIs and unmatched functionality help you create the best possible product for your users. Hundreds of thousands of the world’s most innovative technology companies are scaling faster and more efficiently by building their businesses on Stripe.
+								</p>
+								<a href="#">Learn more</a>
+				    	</div>
+				  	</div>
+					</div>
+				  <div class="column">
+				    <div class="ui raised segment">
+				    	<div class="padding-30">
+				    		<h1 class="ui header">Send Message With Image</h1>
+				    		<p class="">MMS</p>
+					      <p>Stripe builds the most powerful and flexible tools for internet commerce. Whether you’re creating a subscription service, an on-demand marketplace, an e-commerce store, or a crowdfunding platform, Stripe’s meticulously-designed APIs and unmatched functionality help you create the best possible product for your users. Hundreds of thousands of the world’s most innovative technology companies are scaling faster and more efficiently by building their businesses on Stripe.
+								</p>
+								<a href="#">Learn more</a>
+				    	</div>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="spacer-4em"></div>
+				<div class="ui one column stackable center aligned grid padding-50">
+				  <div class="column twelve wide">
+				    <h1>Get Started to get a free 20 text message credit</h1>
+						<div class="spacer-4em"></div>
+						<a class="big ui violet button">Get Started</a>
+				  </div>
+				</div>
+		</div>
+	</div>
+	
+</section>

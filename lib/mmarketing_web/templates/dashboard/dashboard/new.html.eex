@@ -1,0 +1,77 @@
+<div class="flex-container">
+
+	<div class="flex-item">
+		<div class="card">
+        <div class="card-image d-main-card">
+          <span class="card-title">SMS</span>
+          <a class="btn-floating halfway-fab waves-effect waves-light purple" href="<%= sms_path(@conn, :new) %>" ><i class="material-icons">send</i></a>
+        </div>
+        <div class="card-content">
+          <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+        </div>
+      </div>
+	</div>
+	<div class="flex-item">
+		<div class="card">
+        <div class="card-image d-main-card">
+          <span class="card-title">MMS</span>
+          <a class="btn-floating halfway-fab waves-effect waves-light purple" href="<%= mms_path(@conn, :new) %>" ><i class="material-icons">send</i></a>
+        </div>
+        <div class="card-content">
+          <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+        </div>
+      </div>
+	</div>
+
+	<div class="flex-item">
+		<div class="card">
+        <div class="card-image d-main-card">
+          <span class="card-title">MMS</span>
+          <a class="btn-floating halfway-fab waves-effect waves-light purple" href="<%= mms_path(@conn, :new) %>" ><i class="material-icons">send</i></a>
+        </div>
+        <div class="card-content">
+          <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+        </div>
+      </div>
+	</div>
+
+	<div class="flex-item">
+		<div class="card">
+        <div class="card-image d-main-card">
+          <span class="card-title">MMS</span>
+          <a class="btn-floating halfway-fab waves-effect waves-light purple" href="<%= mms_path(@conn, :new) %>" ><i class="material-icons">send</i></a>
+        </div>
+        <div class="card-content">
+          <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+        </div>
+      </div>
+	</div>
+
+	<div class="flex-item">
+		<div class="card">
+        <div class="card-image d-main-card">
+          <span class="card-title">MMS</span>
+          <a class="btn-floating halfway-fab waves-effect waves-light purple" href="<%= mms_path(@conn, :new) %>" ><i class="material-icons">send</i></a>
+        </div>
+        <div class="card-content">
+          <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+        </div>
+      </div>
+	</div>
+
+	<div class="flex-item">
+		<div class="card">
+        <div class="card-image d-main-card">
+          <span class="card-title">MMS</span>
+          <a class="btn-floating halfway-fab waves-effect waves-light purple" href="<%= mms_path(@conn, :new) %>" ><i class="material-icons">send</i></a>
+        </div>
+        <div class="card-content">
+          <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+        </div>
+      </div>
+	</div>
+
+</div>
+
+
+

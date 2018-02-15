@@ -1,0 +1,40 @@
+
+<section class="login-section">
+
+
+  <div class="login-div">
+    <div class="ui raised segment">
+      <h1 class="ui huge header">Sign In</h1>
+      <div class="ui two column stackable center aligned grid">
+
+        <div class="column six wide right aligned">
+          <a class="ui google plus button" href="/auth/google">
+              <i class="google plus icon"></i>Google
+            </a>
+        </div>
+        <div class="column six wide left aligned">
+          <a class="ui facebook button" href="/auth/facebook">
+              <i class="facebook icon"></i>Facebook
+            </a>
+        </div>
+        <div class="column">
+          <%= form_for @conn, sign_in_path(@conn, :new), [as: :auth, class: "ui form"], fn f -> %>
+            <div class="field">
+              <label>Sign in via Email</label>
+              <%= email_input(f, :email, required: true, autocapitalize: "none", class: "") %>
+                
+                <div class="email-submit">
+                  <input class="ui medium green button" type="submit" name="" value="Enter">
+                </div>
+            </div>
+            <div class="">
+              <span class="ui small header">Need an account? </span><a class="sign-up-link" href="/sign-up">Sign up</a>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+

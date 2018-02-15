@@ -1,0 +1,14 @@
+<tr>
+  <td class="content-block" itemprop="handler" itemscope itemtype="http://schema.org/HttpActionHandler">
+    <h1>Hey <%= @user.first_name %>,</h1>
+
+    <p>Welcome to the Minimal Marketing</p>
+
+    <p>We don't use passwords. Each time you sign in we’ll send you a temporary link to your email address. That’s one less password to worry about (yay!). <em>Here’s your first one:</em></p>
+
+    <%= link "Sign in to Minimal Marketing", to: @link, class: "btn-primary", itemprop: "url" %>
+
+    <p><em>This link will self-destruct in 15 min %>.</em><p>
+
+  </td>
+</tr>
